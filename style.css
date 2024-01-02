@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: workSans, Helvetica, sans-serif;
+    height: 100%;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: workSansBold;
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: workSansSemiBold;
+    src: url(./assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+
+@media (max-width: 1440px) {
+    #content {
+        height: 100%;
+        border: 5px solid red;
+        background: url(./assets/images/background-pattern-desktop.svg) no-repeat;
+    }
+   
+}
+
+
+@media (max-width: 375px) {
+    #content {
+        height: 100%;
+        border: 5px solid red;
+        background: url(./assets/images/background-pattern-mobile.svg) no-repeat;
+    }
+
+}
