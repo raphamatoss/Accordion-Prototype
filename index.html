@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="javascript.js"></script>
     <title>FAQ Accordeon</title>
 </head>
 <body>
@@ -13,11 +14,17 @@
 
             <ul>
                 <li>
-                    <h3 class="title" id="firstParagraph" onclick="changesIcon(firstParagraph)">What is Frontend Mentor, and how will it help me?</h3>
-                    <p  class="description" class="firstParagraph">Frontend Mentor offers realistic coding challenges to help 
+                    <h3 class="title" id="firstParagraph" onclick="OpensAccordion('firstParagraph')('firstDescription')">What is Frontend Mentor, and how will it help me?</h3>
+                    <p  class="description" id="firstDescription">Frontend Mentor offers realistic coding challenges to help 
                         developers improve their frontend coding skills with projects 
                         in HTML, CSS, and JavaScript. It's suitable for all levels 
                         and ideal for portfolio building.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="title" id="secondParagraph" onclick="OpensAccordion('secondParagraph')('secondDescription')">Is Frontend Mentor free?</h3>
+                    <p  class="description" id="secondDescription">Yes, Frontend Mentor offers both free and premium coding 
+                        challenges, with the free option providing access to a range of projects suitable for all skill levels.
                     </p>
                 </li>
             </ul>
