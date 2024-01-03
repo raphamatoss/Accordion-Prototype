@@ -24,10 +24,51 @@ body, html {
     src: url(./assets/fonts/static/WorkSans-SemiBold.ttf);
 }
 
+
+
+h1 {
+    font-family: workSansBold;
+    font-size: 250%;
+    padding: 5% 0% 3% 15%;
+    color: hsl(292, 42%, 14%);
+    background: url(./assets/images/icon-star.svg) no-repeat;
+    background-position-y: 59%;
+    background-position-x: 5%;
+    background-size: 6%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    color:  hsl(292, 42%, 14%);
+    padding: 5%;
+    font-size: 100%;
+    background: url(./assets/images/icon-plus.svg) no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: hsl(293, 63%, 54%);
+}
+
+ul p {
+    font-size: 85%;
+    color: hsl(292, 16%, 49%);
+    padding-left: 4%;
+}
+
+.firstParagragh {
+    display: block;
+}
+
+
 @media (max-width: 1440px) {
     #page {
         height: 100%;
-        border: 5px solid red;
         background: url(./assets/images/background-pattern-desktop.svg) no-repeat;
         display: flex;
         justify-content: center;
@@ -45,9 +86,21 @@ body, html {
 }
 
 @media (min-width: 360px) and (max-width: 435px) {
+
+    h1 {
+        background-size: 7%;
+    }
+
+    .title {
+        padding-right: 15%;
+    }
+
+    ul p {
+        padding-right: 4%;
+    }
+
     #page {
         height: 100%;
-        border: 5px solid red;
         background: url(./assets/images/background-pattern-mobile.svg) repeat-x;
     }
 
