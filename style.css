@@ -41,6 +41,11 @@ ul {
     list-style-type: none;
 }
 
+hr {
+    opacity: 0.1;
+    margin: 0% 5%;
+}
+
 .title {
     color:  hsl(292, 42%, 14%);
     padding: 5%;
@@ -58,10 +63,10 @@ ul {
 .description {
     font-size: 85%;
     color: hsl(292, 16%, 49%);
-    padding-left: 4%;
+    padding: 0% 7%;
 }
 
-#firstDescription, #secondDescription, #thirdDescription {
+#firstDescription, #secondDescription, #thirdDescription, #fourthDescription {
     height: 0;
     overflow: hidden;
 }
@@ -76,7 +81,7 @@ ul {
     }
 
     #page #content {
-        height: 70%;
+        height: 73%;
         width: 40%;
         background: white;
         border-radius: 3%;
@@ -88,11 +93,16 @@ ul {
 @media (min-width: 360px) and (max-width: 435px) {
 
     h1 {
+        margin-top: 5%;
         background-size: 7%;
     }
 
     .title {
         padding-right: 15%;
+    }
+
+    ul {
+        margin-top: 4%;
     }
 
     ul p {
