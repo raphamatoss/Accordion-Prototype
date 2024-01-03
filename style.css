@@ -44,11 +44,11 @@ body, html {
    
 }
 
-@media (max-width: 375px) {
+@media (min-width: 360px) and (max-width: 435px) {
     #page {
         height: 100%;
         border: 5px solid red;
-        background: url(./assets/images/background-pattern-mobile.svg) no-repeat;
+        background: url(./assets/images/background-pattern-mobile.svg) repeat-x;
     }
 
     #page #content {
