@@ -25,20 +25,37 @@ body, html {
 }
 
 @media (max-width: 1440px) {
-    #content {
+    #page {
         height: 100%;
         border: 5px solid red;
         background: url(./assets/images/background-pattern-desktop.svg) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #page #content {
+        height: 70%;
+        width: 40%;
+        background: white;
+        border-radius: 3%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
    
 }
 
-
 @media (max-width: 375px) {
-    #content {
+    #page {
         height: 100%;
         border: 5px solid red;
         background: url(./assets/images/background-pattern-mobile.svg) no-repeat;
     }
 
+    #page #content {
+        height: 70%;
+        width: 85%;
+        background: white;
+        border-radius: 3%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
